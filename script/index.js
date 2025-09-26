@@ -104,9 +104,9 @@ const restsFunc = () => {
                             <div class="products-card__image">
                                 <img src="./images/rests/${card.Image}" alt="${card.Image}">
                             </div>
-                            <div class="products-card__description">
-                                <div class="products-card__description-row">
-                                    <h4 class="products-card__description--title">${card.title}</h4>
+                            <div class="pt-5 px-6 pb-[34px]">
+                                <div class="flex items-center justify-between not-last:mb-2.5">
+                                    <h4 class="font-bold text-2xl leading-8 text-[#000]">${card.title}</h4>
                                     <div class="products-card__description--badge">${card.time} мин</div>
                                 </div>
 
