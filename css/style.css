@@ -36,7 +36,6 @@ body {
     align-items: center;
     gap: 4px;
     outline: none;
-    cursor: pointer;
 }
 
 .btn-primary{
