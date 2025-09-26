@@ -15,7 +15,9 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        bgMainFrom: 'rgba(245, 245, 245, 0) 1.04%',
+                        bgMainTo: '#f5f5f5 100%',
+
                     }
                 }
             }
@@ -24,30 +26,30 @@
     <title>Delivery Food</title>
 </head>
 
-<body>
-    <div class="page-wrapper">
+<body class="m-0 p-0">
+    <div class="flex flex-col min-h-screen">
         <header class="header">
-            <div class="container">
+            <div class="w-full h-full max-w-[1230px] my-0 mx-auto px-[15px]">
                 <div class="header-box">
-                    <a href="./index.html" class="header-logo logo">
-                        <img src="./images/logo.png" alt="logo">
+                    <a href="./index.html" class="header-logo max-w-[100px] w-full">
+                        <img class="w-full" src="./images/logo.png" alt="logo">
                     </a>
                     <div class="header-controls">
-                        <button class="btn btn-primary">
-                            <img src="./images/icons/user.png" alt="user">
+                        <button class="flex py-2 px-4 items-center gap-1 outline-none rounded-sm bg-[#1890ff] border-t-[1px] border-solid border-[#1890ff] text-white">
+                            <img class="w-full" src="./images/icons/user.png" alt="user">
                             Войти
                         </button>
-                        <button class="btn btn-outline" id="cart-button">
-                            <img src="./images/icons/shopping-cart.png" alt="user">
+                        <button id="cart-button" class="flex py-2 px-4 items-center gap-1 outline-none rounded-sm border-[1px] border-solid border-[#d9d9d9] bg-white shadow-b-[rgba(0, 0, 0, 0.00)] text-[#595959]" ">
+                            <img class="w-full" src="./images/icons/shopping-cart.png" alt="user">
                             Корзина
                         </button>
                     </div>
                 </div>
             </div>
         </header>
-        <main class="main">
+        <main class="grow bg-gradient-to-b from-bgMainFrom to-bgMainTo">
             <section class="banner">
-                <div class="container">
+                <div class="w-full h-full max-w-[1230px] my-0 mx-auto px-[15px]">
                     <div class="banner-item">
                         <h2 class="banner-item--title">
                             Онлайн-сервис <br> доставки еды на дом
@@ -60,7 +62,7 @@
             </section>
 
             <section class="products">
-                <div class="container">
+                <div class="w-full h-full max-w-[1230px] my-0 mx-auto px-[15px]">
                     <div class="products-header">
                         <h3 class="products-header--title">
                             Рестораны
@@ -82,7 +84,7 @@
                                 <div class="products-card__description-row">
                                     <div class="products-card__description-info">
                                         <div class="products-card__description-info--raiting">
-                                            <img src="./images/icons/star.svg" alt="star">
+                                            <img class="w-full" src="./images/icons/star.svg" alt="star">
                                             4.5
                                         </div>
                                         <div class="products-card__description-info--price">
@@ -99,7 +101,7 @@
 
                         <a href="./goods.html" class="products-card">
                             <div class="products-card__image">
-                                <img src="./images/rests/Tanuki.jpg" alt="Tanuki">
+                                <img class="w-full" src="./images/rests/Tanuki.jpg" alt="Tanuki">
                             </div>
                             <div class="products-card__description">
                                 <div class="products-card__description-row">
@@ -110,7 +112,7 @@
                                 <div class="products-card__description-row">
                                     <div class="products-card__description-info">
                                         <div class="products-card__description-info--raiting">
-                                            <img src="./images/icons/star.svg" alt="star">
+                                            <img class="w-full" src="./images/icons/star.svg" alt="star">
                                             4.5
                                         </div>
                                         <div class="products-card__description-info--price">
@@ -126,7 +128,7 @@
 
                         <a href="./goods.html" class="products-card">
                             <div class="products-card__image">
-                                <img src="./images/rests/FoodBand.jpg" alt="FoodBand">
+                                <img class="w-full" src="./images/rests/FoodBand.jpg" alt="FoodBand">
                             </div>
                             <div class="products-card__description">
                                 <div class="products-card__description-row">
@@ -137,7 +139,7 @@
                                 <div class="products-card__description-row">
                                     <div class="products-card__description-info">
                                         <div class="products-card__description-info--raiting">
-                                            <img src="./images/icons/star.svg" alt="star">
+                                            <img class="w-full" src="./images/icons/star.svg" alt="star">
                                             4.5
                                         </div>
                                         <div class="products-card__description-info--price">
@@ -153,7 +155,7 @@
 
                         <a href="./goods.html" class="products-card">
                             <div class="products-card__image">
-                                <img src="./images/rests/Gadina-pizza.jpg" alt="Gadina-pizza">
+                                <img class="w-full" src="./images/rests/Gadina-pizza.jpg" alt="Gadina-pizza">
                             </div>
                             <div class="products-card__description">
                                 <div class="products-card__description-row">
@@ -164,7 +166,7 @@
                                 <div class="products-card__description-row">
                                     <div class="products-card__description-info">
                                         <div class="products-card__description-info--raiting">
-                                            <img src="./images/icons/star.svg" alt="star">
+                                            <img class="w-full" src="./images/icons/star.svg" alt="star">
                                             4.5
                                         </div>
                                         <div class="products-card__description-info--price">
@@ -180,7 +182,7 @@
 
                         <a href="./goods.html" class="products-card">
                             <div class="products-card__image">
-                                <img src="./images/rests/Tochka-edy.jpg" alt="Tochka-edy">
+                                <img class="w-full" src="./images/rests/Tochka-edy.jpg" alt="Tochka-edy">
                             </div>
                             <div class="products-card__description">
                                 <div class="products-card__description-row">
@@ -191,7 +193,7 @@
                                 <div class="products-card__description-row">
                                     <div class="products-card__description-info">
                                         <div class="products-card__description-info--raiting">
-                                            <img src="./images/icons/star.svg" alt="star">
+                                            <img class="w-full" src="./images/icons/star.svg" alt="star">
                                             4.5
                                         </div>
                                         <div class="products-card__description-info--price">
@@ -207,7 +209,7 @@
 
                         <a href="./goods.html" class="products-card">
                             <div class="products-card__image">
-                                <img src="./images/rests/PizzaBurger.jpg" alt="PizzaBurger">
+                                <img class="w-full" src="./images/rests/PizzaBurger.jpg" alt="PizzaBurger">
                             </div>
                             <div class="products-card__description">
                                 <div class="products-card__description-row">
@@ -218,7 +220,7 @@
                                 <div class="products-card__description-row">
                                     <div class="products-card__description-info">
                                         <div class="products-card__description-info--raiting">
-                                            <img src="./images/icons/star.svg" alt="star">
+                                            <img class="w-full" src="./images/icons/star.svg" alt="star">
                                             4.5
                                         </div>
                                         <div class="products-card__description-info--price">
@@ -243,7 +245,7 @@
                         Корзина
                     </h2>
                     <span class="cart-modal__header--close">
-                        <img src="./images/icons/Close.svg" alt="close">
+                        <img class="w-full" src="./images/icons/Close.svg" alt="close">
                     </span>
                 </div>
 
@@ -258,9 +260,9 @@
                                 250 ₽
                             </div>
 
-                            <button class="btn btn-outline">-</button>
+                            <button class="flex py-2 px-4 items-center gap-1 outline-none rounded-sm border-[1px] border-solid border-[#d9d9d9] bg-white shadow-b-[rgba(0, 0, 0, 0.00)] text-[#595959]">-</button>
                             <div class="cart-item__controls--count">1</div>
-                            <button class="btn btn-outline">+</button>
+                            <button class="flex py-2 px-4 items-center gap-1 outline-none rounded-sm border-[1px] border-solid border-[#d9d9d9] bg-white shadow-b-[rgba(0, 0, 0, 0.00)] text-[#595959]">+</button>
                         </div>
                     </div>
 
@@ -274,9 +276,9 @@
                                 250 ₽
                             </div>
 
-                            <button class="btn btn-outline">-</button>
+                            <button class="flex py-2 px-4 items-center gap-1 outline-none rounded-sm border-[1px] border-solid border-[#d9d9d9] bg-white shadow-b-[rgba(0, 0, 0, 0.00)] text-[#595959]">-</button>
                             <div class="cart-item__controls--count">1</div>
-                            <button class="btn btn-outline">+</button>
+                            <button class="flex py-2 px-4 items-center gap-1 outline-none rounded-sm border-[1px] border-solid border-[#d9d9d9] bg-white shadow-b-[rgba(0, 0, 0, 0.00)] text-[#595959]">+</button>
                         </div>
                     </div>
 
@@ -290,9 +292,9 @@
                                 250 ₽
                             </div>
 
-                            <button class="btn btn-outline">-</button>
+                            <button class="flex py-2 px-4 items-center gap-1 outline-none rounded-sm border-[1px] border-solid border-[#d9d9d9] bg-white shadow-b-[rgba(0, 0, 0, 0.00)] text-[#595959]">-</button>
                             <div class="cart-item__controls--count">1</div>
-                            <button class="btn btn-outline">+</button>
+                            <button class="flex py-2 px-4 items-center gap-1 outline-none rounded-sm border-[1px] border-solid border-[#d9d9d9] bg-white shadow-b-[rgba(0, 0, 0, 0.00)] text-[#595959]">+</button>
                         </div>
                     </div>
                 </div>
@@ -302,10 +304,10 @@
                         1250 ₽
                     </div>
                     <div class="cart-modal__footer--controls">
-                        <button class="btn btn-primary">
+                        <button class="flex py-2 px-4 items-center gap-1 outline-none rounded-sm bg-[#1890ff] border-t-[1px] border-solid border-[#1890ff] text-white">
                             Оформить заказ
                         </button>
-                        <button class="btn btn-outline">
+                        <button class="flex py-2 px-4 items-center gap-1 outline-none rounded-sm border-[1px] border-solid border-[#d9d9d9] bg-white shadow-b-[rgba(0, 0, 0, 0.00)] text-[#595959]">
                             Отмена
                         </button>
                     </div>
@@ -314,10 +316,10 @@
         </div>
 
         <footer class="footer">
-            <div class="container">
+            <div class="w-full h-full max-w-[1230px] my-0 mx-auto px-[15px]">
                 <div class="footer-box">
-                    <a href="./index.html" class="footer-logo logo">
-                        <img src="./images/logo.png" alt="logo">
+                    <a href="./index.html" class="footer-logo max-w-[100px] w-full">
+                        <img class="w-full" src="./images/logo.png" alt="logo">
                     </a>
                     <div class="footer-nav">
                         <ul>
@@ -328,7 +330,7 @@
                         </ul>
                     </div>
                     <div class="footer-social">
-                        <img src="./images/social/inst.png" alt="inst">
+                        <img class="w-full" src="./images/social/inst.png" alt="inst">
                         <img src="./images/social/fb.png" alt="fb">
                         <img src="./images/social/vk.png" alt="vk">
                     </div>
