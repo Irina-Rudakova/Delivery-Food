@@ -37,7 +37,7 @@ const restsFunc = () => {
             rating: 4.5,
             prise: 900,
             type: 'Пицца',
-            Image: 'Tanuki.jpg'
+            Image: 'Pizza+.jpg'
         },
 
         {
@@ -57,7 +57,7 @@ const restsFunc = () => {
             rating: 4.5,
             prise: 900,
             type: 'Пицца',
-            Image: 'Tanuki.jpg'
+            Image: 'FoodBand.jpg'
         },
     
         {
@@ -67,7 +67,7 @@ const restsFunc = () => {
             rating: 4.5,
             prise: 900,
             type: 'Пицца',
-            Image: 'Tanuki.jpg'
+            Image: 'Gadina-pizza.jpg'
         },
 
         {
@@ -77,7 +77,7 @@ const restsFunc = () => {
             rating: 4.5,
             prise: 900,
             type: 'Пицца',
-            Image: 'Tanuki.jpg'
+            Image: 'Tochka-edy.jpg'
         },
 
         {
@@ -87,7 +87,7 @@ const restsFunc = () => {
             rating: 4.5,
             prise: 900,
             type: 'Пицца',
-            Image: 'Tanuki.jpg'
+            Image: 'PizzaBurger.jpg'
         }
     ]
     
