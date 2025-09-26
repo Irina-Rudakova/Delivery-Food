@@ -154,7 +154,7 @@ mb-14
     border-radius: 10px;
     background-color: #fff1b8;
 }
-bg-[url('./images/banners/banner-img.png')] bg-no-repeat bg-contain bg-center-right p-[68px] rounded-[10px] bg-[#fff1b8]*/
+bg-[url('./images/banners/banner-img.png')] bg-no-repeat bg-contain bg-right p-[68px] rounded-[10px] bg-[#fff1b8]
 
 .banner-item--title {
     font-weight: 700;
@@ -164,6 +164,7 @@ bg-[url('./images/banners/banner-img.png')] bg-no-repeat bg-contain bg-center-ri
     margin-top: 0;
     margin-bottom: 15px;
 }
+font-bold text-[39px] text-[#302c34] max-w-[50%] mt-0 mb-[15px] 
 
 .banner-item--subtitle {
     font-weight: 400;
@@ -172,6 +173,7 @@ bg-[url('./images/banners/banner-img.png')] bg-no-repeat bg-contain bg-center-ri
     max-width: 50%;
     margin: 0;
 }
+font-normal text-2xl text-[#302c34] max-w-[50%] m-0 
 
 .products-header {
     display: flex;
@@ -180,6 +182,7 @@ bg-[url('./images/banners/banner-img.png')] bg-no-repeat bg-contain bg-center-ri
     flex-wrap: wrap;
     gap: 24px;
 }
+flex items-center justify-between flex-wrap gap-6 
 
 .products-header--title {
     font-weight: 700;
@@ -187,6 +190,7 @@ bg-[url('./images/banners/banner-img.png')] bg-no-repeat bg-contain bg-center-ri
     color: #000;
     margin: 0;
 }
+font-bold text-4xl text-[ #000] m-0 
 
 .products-header--search {
     min-width: 306px;
@@ -209,7 +213,8 @@ bg-[url('./images/banners/banner-img.png')] bg-no-repeat bg-contain bg-center-ri
     line-height: 24px;
     color: #bfbfbf;
 }
-
+    min-w-[306px] h-[34px] shrink-0 border-solid border-[1px] border-[#d9d9d9] rounded-sm bg-[#fff] py-p-0.5 px-3 focus:outline-none border-[1px] border-solid border-[#d9d9d9] placeholder:font-normal text-base leading-6 text-[#bfbfbf]
+*/
 .products-wrapper {
     margin-top: 44px;
     margin-bottom: 90px;
@@ -463,9 +468,10 @@ bg-[url('./images/banners/banner-img.png')] bg-no-repeat bg-contain bg-center-ri
         max-width: 100%;
     }
 
-    .banner-item--subtitle {
+    /*.banner-item--subtitle {
         max-width: 100%;
     }
+    max-w-[50%] max-[991px]:max-w-full*/
 
     .products-card {
         width: calc((100% - 24px) / 2);
