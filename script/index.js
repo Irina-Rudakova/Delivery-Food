@@ -35,7 +35,7 @@ const restsFunc = () => {
             title: 'Пицца плюс',
             time: 50,
             rating: 4.5,
-            prise: 900,
+            price: 900,
             type: 'Пицца',
             Image: 'Pizza+.jpg'
         },
@@ -45,7 +45,7 @@ const restsFunc = () => {
             title: 'Тануки',
             time: 50,
             rating: 4.5,
-            prise: 900,
+            price: 900,
             type: 'Пицца',
             Image: 'Tanuki.jpg'
         },
@@ -55,7 +55,7 @@ const restsFunc = () => {
             title: 'FoodBand',
             time: 50,
             rating: 4.5,
-            prise: 900,
+            price: 900,
             type: 'Пицца',
             Image: 'FoodBand.jpg'
         },
@@ -65,7 +65,7 @@ const restsFunc = () => {
             title: 'Жадина-пицца',
             time: 50,
             rating: 4.5,
-            prise: 900,
+            price: 900,
             type: 'Пицца',
             Image: 'Gadina-pizza.jpg'
         },
@@ -75,7 +75,7 @@ const restsFunc = () => {
             title: 'Точка еды',
             time: 50,
             rating: 4.5,
-            prise: 900,
+            price: 900,
             type: 'Пицца',
             Image: 'Tochka-edy.jpg'
         },
@@ -85,7 +85,7 @@ const restsFunc = () => {
             title: 'PizzaBurger',
             time: 50,
             rating: 4.5,
-            prise: 900,
+            price: 900,
             type: 'Пицца',
             Image: 'PizzaBurger.jpg'
         }
@@ -100,26 +100,26 @@ const restsFunc = () => {
 
         array.forEach((card) => {
             container.insertAdjacentHTML('beforeend', `
-                <a href="./goods.html?id=${card.id}" class="products-card">
+                <a href="./goods.html?id=${card.id}" class="w-[calc((100%-48px)/3)] rounded-[7px] shadow-[0_4px_12px_0_rgba(0,0,0,0.5)] bg-[#fff] overflow-hidden no-underline">
                             <div class="products-card__image">
                                 <img src="./images/rests/${card.Image}" alt="${card.Image}">
                             </div>
                             <div class="pt-5 px-6 pb-[34px]">
-                                <div class="flex items-center justify-between not-last:mb-2.5">
+                                <div class="flex items-center justify-between mb-3">
                                     <h4 class="font-bold text-2xl leading-8 text-[#000]">${card.title}</h4>
                                     <div class="products-card__description--badge">${card.time} мин</div>
                                 </div>
 
-                                <div class="products-card__description-row">
-                                    <div class="products-card__description-info">
-                                        <div class="products-card__description-info--raiting">
-                                            <img src="./images/icons/star.svg" alt="star">
+                                <div class="flex items-center justify-between not-last:mb-2.5">
+                                    <div class="flex items-center justify-start flex-wrap gap-y-[25px] gap-x-[25px]">
+                                        <div class="flex gap-x-[5px] font-bold text-lg leading-8 text-[#ffc107]">
+                                            <img class="class="w-full" src="./images/icons/star.svg" alt="star">
                                             ${card.rating}
                                         </div>
-                                        <div class="products-card__description-info--price">
+                                        <div class="font-normal text-lg leading-8 text-[#8c8c8c]">
                                             От ${card.price} ₽
                                         </div>
-                                        <div class="products-card__description-info--group">
+                                        <div class="font-normal text-lg leading-8 text-[#8c8c8c] relative before:content-[''] before:block before:w-[5px] before:h-[5px] before:rounded-[50%] before:bg-[#8c8c8c] before:absolute before:left-[-14px] before:top-[14px]">
                                             ${card.type}
                                         </div>
                                     </div>
