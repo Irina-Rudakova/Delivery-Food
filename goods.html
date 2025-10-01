@@ -9,24 +9,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./script/index.js" defer></script>
+    <script src="./script/index.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Delivery Food</title>
 </head>
 
-<body>
-    <div class="page-wrapper">
-        <header class="header">
-            <div class="container">
-                <div class="header-box">
-                    <a href="./index.html" class="header-logo logo">
-                        <img src="./images/logo.png" alt="logo">
+<body class="m-0 p-0">
+    <div class="flex flex-col min-h-screen">
+        <header class="flex items-center min-h-[124px]">
+            <div class="w-full h-full max-w-[1230px] my-0 mx-auto px-[15px]">
+                <div class="h-full flex items-center justify-between">
+                    <a href="./index.html" class="header-logo max-w-[100px]">
+                        <img class="w-full" src="./images/logo.png" alt="logo">
                     </a>
-                    <div class="header-controls">
-                        <button class="btn btn-primary">
-                            <img src="./images/icons/user.png" alt="user">
+                    <div class="flex items-center justify-end gap-2.5">
+                        <button
+                            class="flex py-2 px-4 items-center gap-1 outline-none rounded-sm bg-[#1890ff] border-t-[1px] border-solid border-[#1890ff] text-white">
+                            <img class="w-full" src="./images/icons/user.png" alt="user">
                             Войти
                         </button>
-                        <button class="btn btn-outline" id="cart-button">
-                            <img src="./images/icons/shopping-cart.png" alt="user">
+                        <button id="cart-button"
+                            class="flex py-2 px-4 items-center gap-1 outline-none rounded-sm border-[1px] border-solid border-[#d9d9d9] bg-white shadow-b-[rgba(0, 0, 0, 0.00)] text-[#595959]" ">
+                            <img class=" w-full" src="./images/icons/shopping-cart.png" alt="user">
                             Корзина
                         </button>
                     </div>
@@ -36,31 +40,31 @@
         <main class="main">
 
             <section class="products">
-                <div class="container">
+                <div class="w-full h-full max-w-[1230px] my-0 mx-auto px-[15px]">
 
-                    <div class="products-wrapper">
-                        <div class="products-card">
-                            <div class="products-card__image">
-                                <img src="./images/goods/roll-ygor-standart.jpg" alt="roll-ygor-standart">
+                    <div class="mt-[44px] mb-[90px] flex flex-wrap gap-x-6 gap-y-[30px]">
+                        <div class="w-[calc(33.33%-16px)] rounded-[7px] shadow-[0_4px_12px_0_rgba(0,0,0,0.5)] bg-[#fff] overflow-hidden no-underline">
+                            <div class="w-full">
+                                <img class="w-full" src="./images/goods/roll-ygor-standart.jpg" alt="roll-ygor-standart">
                             </div>
-                            <div class="products-card__description">
-                                <div class="products-card__description-row">
-                                    <h5 class="products-card__description--name">
+                            <div class="pt-5 px-6 pb-[34px]">
+                                <div class="flex items-center justify-between not-last:mb-2.5">
+                                    <h5 class="m-0 font-normal text-2xl leading-8 text-[#000]">
                                         Ролл угорь стандарт
                                     </h5>
                                 </div>
-                                <div class="products-card__description-row">
-                                    <p class="products-card__description--text">
+                                <div class="flex items-center justify-between not-last:mb-2.5">
+                                    <p class="m-0 font-normal text-lg text-[#8c8c8c]">
                                         Рис, угорь, соус унаги, кунжут, водоросли нори.
                                     </p>
                                 </div>
-                                <div class="products-card__description-row">
-                                    <div class="products-card__description-controls">
+                                <div class="flex items-center justify-between not-last:mb-2.5">
+                                    <div class="flex items-center justify-start flex-wrap gap-y-2.5 gap-x-[30px]">
                                         <button class="btn btn-primary">
                                             В корзину
                                             <img src="./images/icons/shopping-cart-white.svg" alt="shopping-cart">
                                         </button>
-                                        <span class="products-card__description-controls--price">
+                                        <span class="font-bold text-xl leading-8 text-[#000]">
                                             250 ₽
                                         </span>
                                     </div>
@@ -68,28 +72,28 @@
                             </div>
                         </div>
 
-                        <div class="products-card">
-                            <div class="products-card__image">
-                                <img src="./images/goods/kalifornia-losos-standart.jpg" alt="kalifornia-losos-standart">
+                        <div class="w-[calc(33.33%-16px)] rounded-[7px] shadow-[0_4px_12px_0_rgba(0,0,0,0.5)] bg-[#fff] overflow-hidden no-underline">
+                            <div class="w-full">
+                                <img class="w-full" src="./images/goods/kalifornia-losos-standart.jpg" alt="kalifornia-losos-standart">
                             </div>
-                            <div class="products-card__description">
-                                <div class="products-card__description-row">
-                                    <h5 class="products-card__description--name">
+                            <div class="pt-5 px-6 pb-[34px]">
+                                <div class="flex items-center justify-between not-last:mb-2.5">
+                                    <h5 class="m-0 font-normal text-2xl leading-8 text-[#000]">
                                         Калифорния лосось стандарт
                                     </h5>
                                 </div>
-                                <div class="products-card__description-row">
-                                    <p class="products-card__description--text">
+                                <div class="flex items-center justify-between not-last:mb-2.5">
+                                    <p class="m-0 font-normal text-lg text-[#8c8c8c]">
                                         Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.
                                     </p>
                                 </div>
-                                <div class="products-card__description-row">
-                                    <div class="products-card__description-controls">
+                                <div class="flex items-center justify-between not-last:mb-2.5">
+                                    <div class="flex items-center justify-start flex-wrap gap-y-2.5 gap-x-[30px]">
                                         <button class="btn btn-primary">
                                             В корзину
                                             <img src="./images/icons/shopping-cart-white.svg" alt="shopping-cart">
                                         </button>
-                                        <span class="products-card__description-controls--price">
+                                        <span class="font-bold text-xl leading-8 text-[#000]">
                                             395 ₽
                                         </span>
                                     </div>
@@ -98,27 +102,27 @@
                         </div>
 
                         <div class="products-card">
-                            <div class="products-card__image">
-                                <img src="./images/goods/okinava-standart.jpg" alt="okinava-standart">
+                            <div class="w-full">
+                                <img class="w-full" src="./images/goods/okinava-standart.jpg" alt="okinava-standart">
                             </div>
-                            <div class="products-card__description">
-                                <div class="products-card__description-row">
-                                    <h5 class="products-card__description--name">
+                            <div class="pt-5 px-6 pb-[34px]">
+                                <div class="flex items-center justify-between not-last:mb-2.5">
+                                    <h5 class="m-0 font-normal text-2xl leading-8 text-[#000]">
                                         Окинава стандарт
                                     </h5>
                                 </div>
-                                <div class="products-card__description-row">
-                                    <p class="products-card__description--text">
+                                <div class="flex items-center justify-between not-last:mb-2.5">
+                                    <p class="m-0 font-normal text-lg text-[#8c8c8c]">
                                         Рис, креветка отварная, сыр сливочный, лосось, огурец свежий...
                                     </p>
                                 </div>
-                                <div class="products-card__description-row">
-                                    <div class="products-card__description-controls">
+                                <div class="flex items-center justify-between not-last:mb-2.5">
+                                    <div class="flex items-center justify-start flex-wrap gap-y-2.5 gap-x-[30px]">
                                         <button class="btn btn-primary">
                                             В корзину
                                             <img src="./images/icons/shopping-cart-white.svg" alt="shopping-cart">
                                         </button>
-                                        <span class="products-card__description-controls--price">
+                                        <span class="font-bold text-xl leading-8 text-[#000]">
                                             250 ₽
                                         </span>
                                     </div>
@@ -127,27 +131,27 @@
                         </div>
 
                         <div class="products-card">
-                            <div class="products-card__image">
-                                <img src="./images/goods/cezar-maki-xl.jpg" alt="cezar-maki-xl">
+                            <div class="w-full">
+                                <img class="w-full" src="./images/goods/cezar-maki-xl.jpg" alt="cezar-maki-xl">
                             </div>
-                            <div class="products-card__description">
-                                <div class="products-card__description-row">
-                                    <h5 class="products-card__description--name">
+                            <div class="pt-5 px-6 pb-[34px]">
+                                <div class="flex items-center justify-between not-last:mb-2.5">
+                                    <h5 class="m-0 font-normal text-2xl leading-8 text-[#000]">
                                         Цезарь маки хl
                                     </h5>
                                 </div>
-                                <div class="products-card__description-row">
-                                    <p class="products-card__description--text">
+                                <div class="flex items-center justify-between not-last:mb-2.5">
+                                    <p class="m-0 font-normal text-lg text-[#8c8c8c]">
                                         Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус цезарь...
                                     </p>
                                 </div>
-                                <div class="products-card__description-row">
-                                    <div class="products-card__description-controls">
+                                <div class="flex items-center justify-between not-last:mb-2.5">
+                                    <div class="flex items-center justify-start flex-wrap gap-y-2.5 gap-x-[30px]">
                                         <button class="btn btn-primary">
                                             В корзину
                                             <img src="./images/icons/shopping-cart-white.svg" alt="shopping-cart">
                                         </button>
-                                        <span class="products-card__description-controls--price">
+                                        <span class="font-bold text-xl leading-8 text-[#000]">
                                             250 ₽
                                         </span>
                                     </div>
@@ -156,27 +160,27 @@
                         </div>
 
                         <div class="products-card">
-                            <div class="products-card__image">
-                                <img src="./images/goods/yasai-maki-standart.jpg" alt="yasai-maki-standart">
+                            <div class="w-full">
+                                <img class="w-full" src="./images/goods/yasai-maki-standart.jpg" alt="yasai-maki-standart">
                             </div>
-                            <div class="products-card__description">
-                                <div class="products-card__description-row">
-                                    <h5 class="products-card__description--name">
+                            <div class="pt-5 px-6 pb-[34px]">
+                                <div class="flex items-center justify-between not-last:mb-2.5">
+                                    <h5 class="m-0 font-normal text-2xl leading-8 text-[#000]">
                                         Ясай маки стандарт 185 г
                                     </h5>
                                 </div>
-                                <div class="products-card__description-row">
-                                    <p class="products-card__description--text">
+                                <div class="flex items-center justify-between not-last:mb-2.5">
+                                    <p class="m-0 font-normal text-lg text-[#8c8c8c]">
                                         Рис, помидор свежий, перец болгарский, авокадо, огурец, айсберг
                                     </p>
                                 </div>
-                                <div class="products-card__description-row">
-                                    <div class="products-card__description-controls">
+                                <div class="flex items-center justify-between not-last:mb-2.5">
+                                    <div class="flex items-center justify-start flex-wrap gap-y-2.5 gap-x-[30px]">
                                         <button class="btn btn-primary">
                                             В корзину
                                             <img src="./images/icons/shopping-cart-white.svg" alt="shopping-cart">
                                         </button>
-                                        <span class="products-card__description-controls--price">
+                                        <span class="font-bold text-xl leading-8 text-[#000]">
                                             250 ₽
                                         </span>
                                     </div>
@@ -185,27 +189,27 @@
                         </div>
 
                         <div class="products-card">
-                            <div class="products-card__image">
-                                <img src="./images/goods/roll-s-krevetkoi-standart.jpg" alt="roll-s-krevetkoi-standart">
+                            <div class="w-full">
+                                <img class="w-full" src="./images/goods/roll-s-krevetkoi-standart.jpg" alt="roll-s-krevetkoi-standart">
                             </div>
-                            <div class="products-card__description">
-                                <div class="products-card__description-row">
-                                    <h5 class="products-card__description--name">
+                            <div class="pt-5 px-6 pb-[34px]">
+                                <div class="flex items-center justify-between not-last:mb-2.5">
+                                    <h5 class="m-0 font-normal text-2xl leading-8 text-[#000]">
                                         Ролл с креветкой стандарт
                                     </h5>
                                 </div>
-                                <div class="products-card__description-row">
-                                    <p class="products-card__description--text">
+                                <div class="flex items-center justify-between not-last:mb-2.5">
+                                    <p class="m-0 font-normal text-lg text-[#8c8c8c]">
                                         Рис, водоросли нори, креветки отварные, сыр сливочный, огурцы
                                     </p>
                                 </div>
-                                <div class="products-card__description-row">
-                                    <div class="products-card__description-controls">
+                                <div class="flex items-center justify-between not-last:mb-2.5">
+                                    <div class="flex items-center justify-start flex-wrap gap-y-2.5 gap-x-[30px]">
                                         <button class="btn btn-primary">
                                             В корзину
                                             <img src="./images/icons/shopping-cart-white.svg" alt="shopping-cart">
                                         </button>
-                                        <span class="products-card__description-controls--price">
+                                        <span class="font-bold text-xl leading-8 text-[#000]">
                                             250 ₽
                                         </span>
                                     </div>
@@ -218,13 +222,13 @@
 
         </main>
 
-        <div class="cart-modal__overlay">
-            <div class="cart-modal">
-                <div class="cart-modal__header">
-                    <h2 class="cart-modal__header--title">
+        <div class="hidden fixed top-0 right-0 bottom-0 left-0 bg-[rgba(0, 0, 0, 0.4)] items-center justify-center">
+            <div class="w-full max-w-[780px] py-10 px-[45px] bg-[#fff]">
+                <div class="flex items-center  justify-between mb-12">
+                    <h2 class="font-bold text-4xl text-[#000] m-0">
                         Корзина
                     </h2>
-                    <span class="cart-modal__header--close">
+                    <span class="cursor-pointer">
                         <img src="./images/icons/Close.svg" alt="close">
                     </span>
                 </div>

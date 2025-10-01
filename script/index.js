@@ -100,7 +100,7 @@ const restsFunc = () => {
 
         array.forEach((card) => {
             container.insertAdjacentHTML('beforeend', `
-                <a href="./goods.html?id=${card.id}" class="w-[calc((100%-48px)/3)] rounded-[7px] shadow-[0_4px_12px_0_rgba(0,0,0,0.5)] bg-[#fff] overflow-hidden no-underline">
+                <a href="./goods.html?id=${card.id}" class="w-[calc(33.33%-16px)] rounded-[7px] shadow-[0_4px_12px_0_rgba(0,0,0,0.5)] bg-[#fff] overflow-hidden no-underline">
                             <div class="products-card__image">
                                 <img src="./images/rests/${card.Image}" alt="${card.Image}">
                             </div>
